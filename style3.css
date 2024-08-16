@@ -1,0 +1,90 @@
+/* formato.css */
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background-color: #121212;
+    color: #ffffff;
+    font-family: Arial, sans-serif;
+}
+
+.Formulario {
+    background-color: #1e1e1e;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="submit"],
+button {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+}
+
+input[type="text"],
+input[type="password"] {
+    background-color: #333333;
+    color: #ffffff;
+}
+
+input[type="submit"] {
+    background-color: #6200ea;
+    color: #ffffff;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+input[type="submit"]:hover {
+    background-color: #3700b3;
+}
+
+button.recuperar {
+    background-color: #d32f2f;
+    color: #ffffff;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button.recuperar:hover {
+    background-color: #b71c1c;
+}
+
+label {
+    display: block;
+    text-align: left;
+    margin-top: -25px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    font-size: 0.9em;
+    color: #bbbbbb;
+}
+
+.recordar,
+.Registro {
+    margin-top: 10px;
+    font-size: 0.9em;
+}
+
+.Registro a {
+    color: #6200ea;
+    text-decoration: none;
+}
+
+.Registro a:hover {
+    text-decoration: underline;
+}
