@@ -1,0 +1,280 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Poppins:wght@400;500;600;700;800&display=swap');
+
+/* font-family: 'Oswald', sans-serif; */
+/* font-family: 'Poppins', sans-serif; */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif; 
+    color: #eee;
+    background-color: #1a1a1a;
+}
+
+.header {
+    background: #292929;
+    color: #eee;
+    padding: 20px 0;
+}
+
+.header .logo {
+    font-size: 24px;
+    color: #b3b3b3;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.menu .navbar {
+    display: flex;
+}
+
+.menu .navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.menu .navbar a {
+    color: #b3b3b3;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 20px;
+    color: #eee;
+}
+
+.header-content .header-img img {
+    max-width: 100%;
+    height: auto;
+}
+
+.header-content .header-txt h1 {
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+
+.header-content .header-txt p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.header-content .btn-1 {
+    background: #8a2be2;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+/* Ofertas */
+.ofert-container {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+    flex-wrap: wrap;
+}
+
+.ofert-1 {
+    background: #333;
+    border-radius: 8px;
+    overflow: hidden;
+    color: #eee;
+    text-align: center;
+    flex: 1 1 calc(33.333% - 20px);
+}
+
+.ofert-img img {
+    width: 100%;
+    height: auto;
+}
+
+.ofert-txt {
+    padding: 10px;
+}
+
+.ofert-txt h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.ofert-txt .btn-2 {
+    background: #8a2be2;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+/* Productos */
+.products {
+    padding: 20px;
+}
+
+.product-content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Tres columnas */
+    gap: 20px;
+}
+
+.product {
+    background: #333;
+    border-radius: 8px;
+    overflow: hidden;
+    color: #eee;
+    text-align: center;
+}
+
+.product img {
+    width: 100%;
+    height: auto;
+}
+
+.product-txt {
+    padding: 10px;
+}
+
+.product-txt h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.product-txt .precio {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.product-txt .agregar-carrito {
+    background: #8a2be2;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+
+@media (max-width: 768px) {
+    .product-content {
+        grid-template-columns: repeat(2, 1fr); /
+    }
+}
+
+@media (max-width: 480px) {
+    .product-content {
+        grid-template-columns: 1fr; 
+    }
+}
+
+/* Iconos */
+.icon {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+    flex-wrap: wrap;
+}
+
+.icon-1 {
+    background: #292929;
+    border-radius: 8px;
+    color: #eee;
+    text-align: center;
+    padding: 20px;
+    flex: 1 1 calc(33.333% - 20px);
+}
+
+.icon-1 img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10px;
+}
+
+.icon-txt h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+/* Blog */
+.blog {
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+    flex-wrap: wrap;
+}
+
+.blog-1 {
+    background: #333;
+    border-radius: 8px;
+    color: #eee;
+    padding: 20px;
+    width: 100%;
+    text-align: center;
+    flex: 1 1 calc(33.333% - 20px);
+}
+
+.blog-1 img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.blog-1 h3 {
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+.blog-1 p {
+    font-size: 16px;
+}
+
+/* Footer */
+.footer {
+    background: #292929;
+    color: #eee;
+    padding: 20px 0;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+    flex-wrap: wrap;
+}
+
+.footer-content .link {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 calc(25% - 20px);
+}
+
+.footer-content .link ul {
+    list-style: none;
+}
+
+.footer-content .link a {
+    color: #b3b3b3;
+    text-decoration: none;
+    margin-bottom: 5px;
+}
+
+.footer-content .link a:hover {
+    color: #8a2be2;
+}
+
+
+
+
